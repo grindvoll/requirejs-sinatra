@@ -1,19 +1,18 @@
 <!--
 Marked Style: GitHub
 -->
-# RequireJS for Rails
+# RequireJS for Sinatra
 
-Integrates [RequireJS](http://requirejs.org/) into the Rails 3 Asset Pipeline.
+Integrates [RequireJS](http://requirejs.org/) into the Sprockets pipeline in a Sinatra application.
 
-**UPGRADE NOTES:** Users upgrading within the 0.x series should read the Changes section for relevant usage changes.  We're pushing hard to 1.0, when the configuration and setup details will be declared stable.  Until that time expect some bumps as things bake out.
+The repo is a fork from [RequireJS-Rails](https://github.com/jwhitley/requirejs-rails/) .
+
+**WARNING:** This is an experimental work in progress; nothing works yet.
+
 
 ## Usage
 
-1.  Add this to your Rails app's `Gemfile`:
-
-    ```
-    gem 'requirejs-rails'
-    ```
+1.  Install the gem
 
 2.  Remove all Sprockets directives such as `//= require jquery` from `application.js` and elsewhere.  Instead establish JavaScript dependencies using AMD-style `define()` and `require()` calls.
 
